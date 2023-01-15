@@ -1,9 +1,11 @@
 <div class="navContainer">
-  <a href="">Home</a>
-  <a href="">About</a>
-  <a href="">Gallery</a>
-  <a href="">Contact</a>
-  <button class="btn">Contactar</button>
+  <div class="links">
+    <a href="">Home</a>
+    <a href="#about">About</a>
+    <a href="">Gallery</a>
+    <a href="">Contact</a>
+    <button class="btn">Contactar</button>
+  </div>
 </div>
 <style>
   .navContainer {
@@ -12,9 +14,15 @@
     height: 60px;
     padding: 12px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     z-index: 3;
+  }
+  .links {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   a {
     text-decoration: none;

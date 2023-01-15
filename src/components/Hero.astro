@@ -1,8 +1,19 @@
+---
+import "@fontsource/great-vibes";
+---
+
 <div class="heroContainer">
   <h1>Pichon Tattoo</h1>
   <p>tatuajes Artisticos</p>
 </div>
 <style>
+  @font-face {
+    font-family: "Streetwear";
+    src: url("/fonts/Streetwear.otf") format("otf");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
   .heroContainer {
     width: 100%;
     height: 100vh;
@@ -13,10 +24,14 @@
     background-image: url("Img/Tattoo-BG.jpg");
     background-size: cover;
     z-index: -1;
-    filter: contrast(85%) grayscale(100%);
+    filter: contrast(75%) grayscale(100%);
   }
   h1 {
     color: antiquewhite;
+    font-family: "Great Vibes";
+    font-size: 8rem;
+    font-weight: 300;
+    text-shadow: 4px 4px #202020a6;
   }
   p {
     color: antiquewhite;
