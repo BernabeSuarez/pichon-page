@@ -1,9 +1,9 @@
 <div class="navContainer" id="nav">
   <div class="links">
-    <a href="">Home</a>
-    <a href="#about">About</a>
-    <a href="">Gallery</a>
-    <a href="">Contact</a>
+    <a id="1" href="">Home</a>
+    <a id="2" href="#about">About</a>
+    <a id="3" href="">Gallery</a>
+    <a id="4" href="">Contact</a>
     <button class="btn">Contactar</button>
   </div>
 </div>
@@ -77,6 +77,14 @@
   const menu = document.getElementById("nav");
   const button = document.getElementById("btn");
   button.addEventListener("click", animatedMenu);
+  const link1 = document.getElementById("1");
+  const link2 = document.getElementById("2");
+  const link3 = document.getElementById("3");
+  const link4 = document.getElementById("4");
+  link1.addEventListener("click", animatedMenu);
+  link2.addEventListener("click", animatedMenu);
+  link3.addEventListener("click", animatedMenu);
+  link4.addEventListener("click", animatedMenu);
 
   function animatedMenu() {
     menu.classList.toggle("active_menu");
