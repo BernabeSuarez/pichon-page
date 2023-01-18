@@ -2,6 +2,7 @@
 import About from "../components/About.astro";
 import Hero from "../components/Hero.astro";
 import Navbar from "../components/Navbar.astro";
+import { Icon } from "astro-icon";
 
 export interface Props {
   title: string;
@@ -20,6 +21,11 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
+    <div id="btn">
+      <Icon name="mdi:menu" id="menu" />
+      <Icon name="mdi:close" id="close" />
+    </div>
+
     <Navbar />
     <Hero />
     <About />
@@ -28,6 +34,16 @@ const { title } = Astro.props;
   </body>
 </html>
 <style is:global>
+  [astro-icon] {
+    display: none;
+    width: 30px;
+    margin-left: 90%;
+    margin-top: 3%;
+    position: fixed;
+    color: white;
+    z-index: 999;
+    cursor: pointer;
+  }
   :root {
     --accent: 124, 58, 237;
     --accent-gradient: linear-gradient(
@@ -53,5 +69,20 @@ const { title } = Astro.props;
     background-attachment: fixed;
     background-size: cover;
     z-index: -50;
+  }
+  #btn {
+    z-index: 999;
+  }
+  @media (max-width: 768px) {
+    [astro-icon] {
+      display: block;
+    }
+    #close {
+      display: none;
+    }
+
+    .closeBtn {
+      display: block;
+    }
   }
 </style>
