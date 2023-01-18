@@ -3,7 +3,6 @@
     <a id="1" href="/">Home</a>
     <a id="2" href="/">About</a>
     <a id="3" href="/galeria">Gallery</a>
-    <a id="4" href="">Contact</a>
     <button class="btn">Contactar</button>
   </div>
 </div>
@@ -80,11 +79,9 @@
   const link1 = document.getElementById("1");
   const link2 = document.getElementById("2");
   const link3 = document.getElementById("3");
-  const link4 = document.getElementById("4");
   link1.addEventListener("click", animatedMenu, { passive: true });
   link2.addEventListener("click", animatedMenu, { passive: true });
   link3.addEventListener("click", animatedMenu, { passive: true });
-  link4.addEventListener("click", animatedMenu, { passive: true });
 
   function animatedMenu() {
     menu.classList.toggle("active_menu");
