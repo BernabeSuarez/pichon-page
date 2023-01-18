@@ -1,7 +1,45 @@
 ---
 import LayoutGallery from "../layouts/LayoutGallery.astro";
+import { dataGallery } from "../data/gallery";
 ---
 
 <LayoutGallery title="Galeria Pichon Tattoo">
-  <div>galeria</div>
+  <div class="gallery">
+    <div class="img">
+      {dataGallery.map((item) => <img src={item.src} alt={item.alt} />)}
+    </div>
+  </div>
 </LayoutGallery>
+<style>
+  .gallery {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .img {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    display: flex;
+    background: #000;
+  }
+  .img img {
+    min-width: 0;
+    flex: 1 1 10px;
+    object-fit: cover;
+    opacity: 0.5;
+    transition: 0.8s;
+    filter: grayscale(70%);
+  }
+  .img img:hover {
+    flex: 2 2 400px;
+    opacity: 1;
+    z-index: 1000;
+    filter: grayscale(0%);
+  }
+  .img:hover > :not(:hover) {
+    filter: blur(4px) grayscale(100%);
+  }
+</style>
