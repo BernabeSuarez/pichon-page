@@ -1,5 +1,25 @@
+---
+import { Icon } from "astro-icon";
+---
+
 <div class="footer">
-  <h2>footer 2023</h2>
+  <div class="logo">
+    <h2>Pichon Tattoo</h2>
+  </div>
+  <div class="social-container">
+    <a href="https://www.instagram.com/pichon_tattoo/" target="_blank">
+      <Icon name="mdi:instagram" class="social-icons" />
+    </a>
+    <a href="https://twitter.com/Pichontattoo1" target="_blank">
+      <Icon name="mdi:twitter" class="social-icons" />
+    </a>
+    <a href="https://wa.me/2364513422" target="_blank">
+      <Icon name="tabler:brand-whatsapp" class="social-icons" />
+    </a>
+  </div>
+  <div class="data">
+    <h4>2023 - Pichon-Dev</h4>
+  </div>
 </div>
 <style>
   .footer {
@@ -7,7 +27,59 @@
     height: 20vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: black;
     color: white;
+  }
+  a {
+    text-decoration: none;
+  }
+  .logo {
+    width: 30%;
+    padding: 2%;
+  }
+  .social-container {
+    padding: 2%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .social-icons {
+    width: 30px;
+    height: 30px;
+    color: white;
+    z-index: 15;
+  }
+
+  .social-icons:hover {
+    color: yellow;
+  }
+
+  .data {
+    width: 30%;
+    padding: 2%;
+  }
+  .data h4 {
+    margin-left: 15%;
+  }
+
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      height: auto;
+      text-align: center;
+    }
+    .social-container {
+      width: 90%;
+    }
+    .data {
+      width: 90%;
+    }
+    .data h4 {
+      margin: 0;
+    }
+    .logo {
+      width: 90%;
+    }
   }
 </style>
