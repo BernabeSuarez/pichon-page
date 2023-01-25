@@ -1,9 +1,0 @@
-import{r as n}from"./chunks/index.c5aa381b.js";/* empty css                              */const d=[{id:1,src:"Img/1A.webp",alt:"Tattoo Photo",class:".div1"},{id:2,src:"Img/2A.webp",alt:"Tattoo Photo",class:".div2"},{id:3,src:"Img/3A.webp",alt:"Tattoo Photo",class:".div3"},{id:4,src:"Img/4A.webp",alt:"Tattoo Photo",class:".div4"},{id:5,src:"Img/5A.webp",alt:"Tattoo Photo",class:".div5"},{id:6,src:"Img/6A.webp",alt:"Tattoo Photo",class:".div6"},{id:7,src:"Img/7A.webp",alt:"Tattoo Photo",class:".div7"}];var o={exports:{}},i={};/**
- * @license React
- * react-jsx-runtime.production.min.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */var m=n.exports,x=Symbol.for("react.element"),f=Symbol.for("react.fragment"),u=Object.prototype.hasOwnProperty,v=m.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,_={key:!0,ref:!0,__self:!0,__source:!0};function p(s,e,c){var t,a={},l=null,r=null;c!==void 0&&(l=""+c),e.key!==void 0&&(l=""+e.key),e.ref!==void 0&&(r=e.ref);for(t in e)u.call(e,t)&&!_.hasOwnProperty(t)&&(a[t]=e[t]);if(s&&s.defaultProps)for(t in e=s.defaultProps,e)a[t]===void 0&&(a[t]=e[t]);return{$$typeof:x,type:s,key:l,ref:r,props:a,_owner:v.current}}i.Fragment=f;i.jsx=p;i.jsxs=p;(function(s){s.exports=i})(o);const y=()=>{const[s,e]=n.exports.useState(""),[c,t]=n.exports.useState(!1),a=r=>{e(r),t(!0)},l=()=>{t(!1)};return o.exports.jsxs(o.exports.Fragment,{children:[c&&o.exports.jsx("div",{className:c?"container-open":"container",onClick:l,children:o.exports.jsx("div",{className:"modal",children:o.exports.jsx("img",{src:s,alt:"image gallery",onClick:l})})}),o.exports.jsx("div",{className:"gallery",children:o.exports.jsx("div",{className:"img",children:d.map(r=>o.exports.jsx("img",{src:r.src,alt:r.alt,className:"image-selected",onClick:()=>a(r.src)}))})})]})};export{y as default};
