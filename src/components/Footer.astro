@@ -3,8 +3,8 @@ import { Icon } from "astro-icon";
 ---
 
 <div class="footer">
-  <div class="logo">
-    <h2>Pichon Tattoo</h2>
+  <div class="footer-container">
+    <div class="data"><p>2023 - Pichon - Dev</p></div>
   </div>
   <div class="social-container">
     <a
@@ -29,15 +29,21 @@ import { Icon } from "astro-icon";
       <Icon name="tabler:brand-whatsapp" class="social-icons" />
     </a>
   </div>
-  <div class="data">
-    <p>2023 - Pichon-Dev</p>
-  </div>
 </div>
 <style>
-  .footer {
+  .footer-container {
+    border-bottom: 1px solid white;
     width: 100%;
-    height: 20vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer {
+    width: 96%;
+    display: flex;
+    padding-left: 2%;
+    padding-right: 2%;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: black;
@@ -46,19 +52,16 @@ import { Icon } from "astro-icon";
   a {
     text-decoration: none;
   }
-  .logo {
-    width: 30%;
-    padding: 2%;
-  }
+
   .social-container {
     padding: 2%;
-    width: 60%;
+    width: 10%;
     display: flex;
     justify-content: space-between;
   }
   .social-icons {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     color: white;
     z-index: 15;
   }
@@ -68,11 +71,9 @@ import { Icon } from "astro-icon";
   }
 
   .data {
-    width: 30%;
+    width: 100%;
     padding: 2%;
-  }
-  .data p {
-    margin-left: 15%;
+    text-align: center;
   }
 
   @media (max-width: 768px) {
