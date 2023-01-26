@@ -1,0 +1,9 @@
+import{r as n}from"./index.45a47ed6.js";/* empty css                       */const m=[{id:1,src:"img/1A.jpg",alt:"Tattoo Photo",class:".div1"},{id:2,src:"img/2A.jpg",alt:"Tattoo Photo",class:".div2"},{id:3,src:"img/3A.webp",alt:"Tattoo Photo",class:".div3"},{id:4,src:"img/4A.webp",alt:"Tattoo Photo",class:".div4"},{id:5,src:"img/5A.webp",alt:"Tattoo Photo",class:".div5"},{id:6,src:"img/6A.webp",alt:"Tattoo Photo",class:".div6"},{id:7,src:"img/7A.webp",alt:"Tattoo Photo",class:".div7"}];var o={},p={get exports(){return o},set exports(s){o=s}},c={};/**
+ * @license React
+ * react-jsx-runtime.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */var u=n,f=Symbol.for("react.element"),v=Symbol.for("react.fragment"),g=Object.prototype.hasOwnProperty,x=u.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,_={key:!0,ref:!0,__self:!0,__source:!0};function d(s,t,i){var e,a={},l=null,r=null;i!==void 0&&(l=""+i),t.key!==void 0&&(l=""+t.key),t.ref!==void 0&&(r=t.ref);for(e in t)g.call(t,e)&&!_.hasOwnProperty(e)&&(a[e]=t[e]);if(s&&s.defaultProps)for(e in t=s.defaultProps,t)a[e]===void 0&&(a[e]=t[e]);return{$$typeof:f,type:s,key:l,ref:r,props:a,_owner:x.current}}c.Fragment=v;c.jsx=d;c.jsxs=d;(function(s){s.exports=c})(p);const y=()=>{const[s,t]=n.useState(""),[i,e]=n.useState(!1),a=r=>{t(r),e(!0)},l=()=>{e(!1)};return o.jsxs(o.Fragment,{children:[i&&o.jsx("div",{className:i?"container-open":"container",onClick:l,children:o.jsx("div",{className:"modal",children:o.jsx("img",{src:s,alt:"image gallery",onClick:l})})}),o.jsx("div",{className:"gallery",children:o.jsx("div",{className:"img",children:m.map(r=>o.jsx("img",{src:r.src,alt:r.alt,className:"image-selected",onClick:()=>a(r.src)}))})})]})};export{y as default};
