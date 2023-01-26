@@ -1,43 +1,43 @@
 export const dataGallery = [
     {
         id: 1,
-        src: "img/1a.webp",
+        src: "img/ancla.webp",
         alt: "Tattoo Photo",
         class: ".div1"
     },
     {
         id: 2,
-        src: "img/2A.jpg",
+        src: "img/koi.jpg",
         alt: "Tattoo Photo",
         class: ".div2"
     },
     {
         id: 3,
-        src: "img/3A.webp",
+        src: "img/universo.webp",
         alt: "Tattoo Photo",
         class: ".div3"
     },
     {
         id: 4,
-        src: "img/4A.webp",
+        src: "img/mariposa.webp",
         alt: "Tattoo Photo",
         class: ".div4"
     },
     {
         id: 5,
-        src: "img/5A.webp",
+        src: "img/indio.webp",
         alt: "Tattoo Photo",
         class: ".div5"
     },
     {
         id: 6,
-        src: "img/6A.webp",
+        src: "img/pelota.webp",
         alt: "Tattoo Photo",
         class: ".div6"
     },
     {
         id: 7,
-        src: "img/7A.webp",
+        src: "img/momo.webp",
         alt: "Tattoo Photo",
         class: ".div7"
     },
