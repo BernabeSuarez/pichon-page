@@ -1,7 +1,7 @@
 export const dataGallery = [
     {
         id: 1,
-        src: "https://raw.githubusercontent.com/BernabeSuarez/pichon-page/main/public/Img/ancla.webp",
+        src: "../img/ancla.webp",
         alt: "Tattoo Photo",
         class: ".div1"
     },
