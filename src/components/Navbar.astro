@@ -1,8 +1,8 @@
 <div class="navContainer" id="nav">
   <div class="links">
     <a id="1" href="/">Home</a>
-    <a id="2" href="/">About</a>
-    <a id="3" href="/galeria">Gallery</a>
+    <a id="2" href="/">Info</a>
+    <a id="3" href="/galeria">Galeria</a>
     <a href="https://wa.me/2364513422" target="_blank" class="button"
       ><button class="btn">Contactar</button></a
     >
@@ -34,10 +34,15 @@
     align-items: center;
     border: 1px transparent;
     height: 80%;
-    transition: all 0.6s;
+    transition: all 0.3s;
   }
   a:hover {
     border-bottom: 1px solid #fafafa;
+    transform: scale(1.1);
+  }
+  .links:hover > :not(:hover) {
+    color: rgb(255, 253, 250);
+    font-style: italic;
   }
 
   .btn {
@@ -47,10 +52,10 @@
     background-color: rgb(196, 196, 4);
     color: black;
     border: none;
+    transition: 0.6s;
   }
   .btn:hover {
-    color: yellow;
-    background-image: linear-gradient(rgb(5, 5, 5), #646464);
+    background-image: linear-gradient(to right, #f4ff00 0%, #a56410 100%);
   }
   .button {
     text-decoration: none;
