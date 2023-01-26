@@ -1,7 +1,7 @@
 export const dataGallery = [
     {
         id: 1,
-        src: "https://images.pexels.com/photos/5320148/pexels-photo-5320148.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+        src: "public\img\1a.webp",
         alt: "Tattoo Photo",
         class: ".div1"
     },
