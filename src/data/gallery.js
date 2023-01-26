@@ -41,4 +41,10 @@ export const dataGallery = [
         alt: "Tattoo Photo",
         class: ".div7"
     },
+    {
+        id: 8,
+        src: "/img/rosa.webp",
+        alt: "Tattoo Photo",
+        class: ".div7"
+    },
 ]
