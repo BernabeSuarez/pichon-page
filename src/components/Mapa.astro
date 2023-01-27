@@ -2,6 +2,7 @@
   <h2>Como Llegar</h2>
 
   <iframe
+    title="Google Maps Canva"
     width="90%"
     height="400px"
     id="gmap_canvas"
@@ -28,3 +29,13 @@
     margin: auto;
   }
 </style>
+<script>
+  const map = document.getElementById("gmap_canvas");
+  map.addEventListener(
+    "click",
+    () => {
+      console.log("");
+    },
+    { passive: true }
+  );
+</script>
