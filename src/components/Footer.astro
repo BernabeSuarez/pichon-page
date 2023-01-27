@@ -4,9 +4,20 @@ import { Icon } from "astro-icon";
 
 <div class="footer">
   <div class="footer-container">
-    <div class="data"><p>2023 - Pichon - Dev</p></div>
+    <div class="data">
+      <p>2023 - Pichon - Dev</p>
+      <p>San Luis 327 - Vedia - Bs. As.</p>
+      <p>Tel. 2364513422</p>
+    </div>
   </div>
   <div class="social-container">
+    <a
+      href="https://www.facebook.com/bernabe.suarez/"
+      target="_blank"
+      aria-label="Enlace a pagina de Facebook"
+    >
+      <Icon name="ri:facebook-fill" class="social-icons" />
+    </a>
     <a
       href="https://www.instagram.com/pichon_tattoo/"
       target="_blank"
@@ -73,7 +84,13 @@ import { Icon } from "astro-icon";
   .data {
     width: 100%;
     padding: 2%;
-    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .data p {
+    font-weight: 100;
+    font-family: "Inter";
   }
 
   @media (max-width: 768px) {
