@@ -1,8 +1,10 @@
 ---
+import Loader from "../components/Loader.astro";
 import Modal from "../components/modal/Modal";
 import LayoutGallery from "../layouts/LayoutGallery.astro";
 ---
 
 <LayoutGallery title="Galeria Pichon Tattoo">
+  <Loader />
   <Modal client:visible />
 </LayoutGallery>

@@ -1,0 +1,64 @@
+<div class="load-container" id="loader">
+  <h2 class="tracking-out-contract">Pichon Tattoo</h2>
+</div>
+<style>
+  .load-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1000;
+  }
+  .hidden {
+    display: none;
+  }
+  .tracking-out-contract {
+    font-family: "Inter";
+    font-size: 3rem;
+    text-transform: uppercase;
+    background: #f4ff00;
+    background: linear-gradient(to right, #f4ff00 0%, #a51910 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: tracking-in-contract-bck 2s cubic-bezier(0.215, 0.61, 0.355, 1)
+      both;
+  }
+
+  @keyframes tracking-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      transform: translateZ(400px);
+      opacity: 0;
+    }
+    25% {
+      opacity: 0.6;
+    }
+
+    50% {
+      letter-spacing: 0;
+      transform: translateZ(0);
+      opacity: 1;
+    }
+    60% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 0.8;
+    }
+    100% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+  }
+</style>
+<script>
+  const loader = document.getElementById("loader");
+
+  setTimeout(() => {
+    loader.classList.add("hidden");
+  }, 1800);
+</script>
